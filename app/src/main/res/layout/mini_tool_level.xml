@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#6bd982" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/head_title"/>&quot;\10
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffee00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/opinion_title">
+        <com.example.shenfei.tools.view.ToolLevelView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/toolleveView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:background="#4c4c4c" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/txt_x" android:background="@drawable/shape_corner_back" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="50dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X:0"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/txt_y" android:background="@drawable/shape_corner_back" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="50dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Y:0"/>
+    </LinearLayout>
+</RelativeLayout>

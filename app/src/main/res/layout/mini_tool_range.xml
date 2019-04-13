@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.shenfei.tools.view.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/relative_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.example.shenfei.tools.view.FlashlightSurface android:id="@+id/surfaceview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/head_title"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/tip" android:background="#e0000000" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_tip" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/toptextrange" android:background="#e0000000" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/id_toptextrange" android:layout_above="@+id/tip"/>
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp">
+        <ImageView android:id="@+id/topbluepoint" android:background="@drawable/line_move_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/bottombluepoint" android:background="@drawable/line_move_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_top" android:background="#e0000000" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/opinion_title" android:layout_alignParentLeft="true">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_Height"/>
+        <EditText android:textSize="18sp" android:textColor="#000000" android:gravity="center" android:id="@+id/toptextheight" android:background="@drawable/height_bg_shape" android:layout_width="65dp" android:layout_height="30dp" android:numeric="decimal"/>
+    </LinearLayout>
+</com.example.shenfei.tools.view.CustomRelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/welcome_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160dp" android:layout_marginBottom="60dp" android:src="@drawable/welcome_logo" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/welcome_name" android:layout_below="@+id/iv_logo" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="版本号V 1.0" android:layout_below="@+id/imageView1" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

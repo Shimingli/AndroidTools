@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_main" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.example.shenfei.tools.view.RulerViewInch android:id="@+id/left" android:layout_width="50dp" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.example.shenfei.tools.view.VerticalTextView android:textSize="32sp" android:textColor="#000000" android:gravity="right" android:id="@+id/mm" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.example.shenfei.tools.view.VerticalTextView android:textSize="30sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" mm"/>
+    </LinearLayout>
+    <com.example.shenfei.tools.view.RulerViewMm android:id="@+id/leftRulerViewMm" android:layout_width="50dp" android:layout_height="match_parent"/>
+    <ImageButton android:id="@+id/id_point_left" android:background="@drawable/s_menu_open" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/linear_main"/>
+    <ImageButton android:id="@+id/id_point_right" android:background="@drawable/s_menu_open" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/linear_main" android:layout_centerInParent="true"/>
+    <include layout="@layout/head_mini"/>
+</RelativeLayout>

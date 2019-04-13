@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.example.shenfei.tools.view.CycleRulerView android:id="@+id/cycleView" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/fm" android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+    <ToggleButton android:textSize="16sp" android:textColor="@color/white" android:id="@+id/camera_swicth" android:background="@drawable/camera_shape_1" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:checked="true" android:textOn="关闭" android:textOff="开启" android:drawableLeft="@drawable/camera_logo_o" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+</FrameLayout>
